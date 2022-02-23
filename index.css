@@ -6,7 +6,9 @@
 #body-div {
   padding-top: 100px;
   color: white;
-  z-index: 6;
+  background-color: rgba(0, 0, 0, 0.582);
+  margin-left: 10%;
+  margin-right: 10%;
 }
 #header-img {
   margin: 3px;
@@ -91,17 +93,17 @@
   margin-bottom: -20px;
 }
 #background-bottom {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
   position: fixed;
-  bottom: -200px;
+  bottom: -170px;
   left: 0;
-  z-index: 4;
+  z-index: -1;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.95;
+  padding-top: 1000px;
 }
-#background {
-  background-color: rgb(39, 37, 37);
-  z-index: 2;
-}
+
 .separation-line {
   height: 5px;
   background: linear-gradient(
@@ -206,5 +208,11 @@
   }
   #company-name {
     font-size: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  #background-bottom {
+    width: 1000px;
+    height: auto;
   }
 }
